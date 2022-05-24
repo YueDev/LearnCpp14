@@ -3,16 +3,16 @@
 //
 
 #include <iostream>
-#include "MyClass1.h"
+#include "MyClass.h"
 
 
 //destructor
-MyClass1::~MyClass1() {
+MyClass::~MyClass() {
 
     std::cout << "class end" << std::endl;
 }
 
-MyClass1::MyClass1() {
+MyClass::MyClass() {
     std::cout << "class start" << std::endl;
 };
 

@@ -5,14 +5,11 @@
 #include <array>
 #include <iomanip>
 #include <algorithm>
-
 #include <fstream>
-
-#include "test.h"
-
 #include <new>
 
-#include "MyClass1.h"
+#include "test.h"
+#include "MyClass.h"
 
 using namespace std;
 
@@ -25,6 +22,8 @@ struct People {
 
 int main() {
 
+    MyClass myClass1;
+    MyClass myClass2;
 
     return 0;
 }
