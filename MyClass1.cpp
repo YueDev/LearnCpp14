@@ -8,7 +8,6 @@
 
 //destructor
 MyClass1::~MyClass1() {
-
     std::cout << "class end" << std::endl;
 }
 
