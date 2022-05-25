@@ -13,6 +13,9 @@ private:
 public:
     MyClass();
     ~MyClass();
+    void operator+(int i) const;
+    void operator+(double d) const;
+    void operator+(const MyClass &myClass) const;
 };
 
 

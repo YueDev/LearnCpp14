@@ -24,32 +24,12 @@ struct People {
 
 int main() {
 
-    MyList list;
+    MyClass myClass1;
+    MyClass myClass2;
 
-    list.add(11111111);
-    list.add(22222222);
-    list.add(33333333);
-    list.add(44444444);
-    list.add(55555555);
-    list.add(66666666);
-    list.add(77777777);
-    list.add(88888888);
-    list.add(99999999);
-    list.add(10101010);
-    list.add(11111111);
-    list.add(11111111);
-    list.add(11111111);
-    list.add(11111111);
-    list.add(11111111);
-
-    cout.setf(ios_base::boolalpha);
-
-    for (int i = 0; i < 5; ++i) {
-        Item item;
-        cout << list.remove(item) << endl;
-        list.print();
-    }
-
+    myClass1 + 1;
+    myClass2 + 2.2;
+    myClass1 + myClass2;
 
     return 0;
 }
