@@ -13,6 +13,8 @@
 
 #include "MyList.h"
 
+
+
 using namespace std;
 
 
@@ -22,16 +24,41 @@ struct People {
 };
 
 
+void testFriendFunc();
+
 int main() {
 
+    testFriendFunc();
+
+    return 0;
+}
+
+
+
+//测试MyClass的操作符重载和友元函数
+void testFriendFunc() {
     MyClass myClass1;
     MyClass myClass2;
 
+    //重载操作符测试
+    cout << "override operator test: " << endl;
     myClass1 + 1;
     myClass2 + 2.2;
     myClass1 + myClass2;
+    cout << endl;
 
-    return 0;
+    //友元测试
+    cout << "friend func test:" << endl;
+    1 + myClass1;                        //重载操作符的友元
+    friendFunc(myClass1);     //直接调用的友元函数
+    cout << endl;
+
+    //<<测试
+    cout << "override operator << test: " << endl;
+    cout << myClass1 << endl;
+    cout << "another myClass invoke <<: [" << myClass2 << "] invoke << finish!" << endl;
+    cout << endl;
+
 }
 
 
