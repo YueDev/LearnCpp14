@@ -12,7 +12,7 @@
 #include "MyClass.h"
 
 #include "MyList.h"
-
+#include "Complex.h"
 
 
 using namespace std;
@@ -28,11 +28,10 @@ void testFriendFunc();
 
 int main() {
 
-    testFriendFunc();
+
 
     return 0;
 }
-
 
 
 //测试MyClass的操作符重载和友元函数
@@ -58,6 +57,7 @@ void testFriendFunc() {
     cout << myClass1 << endl;
     cout << "another myClass invoke <<: [" << myClass2 << "] invoke << finish!" << endl;
     cout << endl;
+
 
 }
 

@@ -13,6 +13,11 @@ MyClass::MyClass() {
     temp = 0;
 }
 
+MyClass::MyClass(int i) {
+    temp = i;
+}
+
+
 void MyClass::operator+(int i) const {
     std::cout << "operator + int" << std::endl;
 }
@@ -40,3 +45,10 @@ std::ostream &operator<<(std::ostream &os, const MyClass &myClass) {
     os << "MyClass temp: " << myClass.temp;
     return os;
 }
+
+
+MyClass::operator int() const {
+    std::cout << "operator int" << std::endl;
+    return temp;
+}
+
