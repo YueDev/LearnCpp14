@@ -28,8 +28,6 @@ void testFriendFunc();
 
 int main() {
 
-
-
     return 0;
 }
 
